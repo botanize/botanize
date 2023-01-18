@@ -8,14 +8,14 @@ class PrimeServer < Formula
 
   head do
     url "https://github.com/kevinkreiser/prime_server.git", branch: "master"
-
-    depends_on "automake" => :build
-    depends_on "autoconf" => :build
-    depends_on "zeromq" => :build
-    depends_on "libsodium" => :build
-    depends_on "czmq" => :build
-    depends_on "libtool" => :build
   end
+
+  depends_on "automake" => :build
+  depends_on "autoconf" => :build
+  depends_on "zeromq" => :build
+  depends_on "libsodium" => :build
+  depends_on "czmq" => :build
+  depends_on "libtool" => :build
 
   def install
     system "./autogen.sh"
